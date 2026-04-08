@@ -11,8 +11,12 @@ namespace BiblioInheritance
         {
             Author = author;
             PageCount = pageCount;
+            
 
-
+        }
+        public override void UpdateStatus()
+        {
+            Status = "Checked out";
         }
 
     }

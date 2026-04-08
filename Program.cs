@@ -15,6 +15,8 @@ namespace BiblioInheritance
             code.GetInfo();
             Book basilisk = new Book("David Weber", 422, "On Basilisk Station", "Science Fiction");
             basilisk.GetInfo();
+            basilisk.UpdateStatus();
+            Console.WriteLine(basilisk.Status);
             Periodical p = new Periodical("Wired", "Technology", "Monthly");
             p.UpdateStatus();
             p.GetInfo();
@@ -22,6 +24,7 @@ namespace BiblioInheritance
             Console.WriteLine("Start Video below");
             Video v = new Video("Ex Machine", "Sci-Fi", "Alex Garland", 108, "On-demand");
             v.GetInfo();
+            v.UpdateStatus();
 
         }
     }
