@@ -13,6 +13,8 @@ namespace BiblioInheritance
             Console.WriteLine(test.Status);
             Book code = new Book("Charles Petzold", 396, "Code: The Hidden Language of Computer Hardware and Software", "Non-Fiction");
             code.GetInfo();
+            Book basilisk = new Book("David Weber", 422, "On Basilisk Station", "Science Fiction");
+            basilisk.GetInfo();
             Periodical p = new Periodical("Wired", "Technology", "Monthly");
             p.UpdateStatus();
             p.GetInfo();
